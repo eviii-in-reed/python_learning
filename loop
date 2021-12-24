@@ -1,0 +1,13 @@
+# return to the sum of all the divisors of a number, without including it.
+def sum_divisors(n):
+  sum = 0
+  # Return the sum of all divisors of n, not including n
+  x = 1
+  if n == 0:
+    sum = 0
+  else:
+    while x < n:
+      if n % x == 0:
+        sum += x
+      x += 1
+  return sum
